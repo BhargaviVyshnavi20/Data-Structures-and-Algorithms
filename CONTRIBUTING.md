@@ -1,4 +1,4 @@
-# 🤝 Contributing Guidelines
+# Contributing Guidelines
 
 Thank you for your interest in contributing! 
 
