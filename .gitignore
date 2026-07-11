@@ -1,0 +1,89 @@
+# ==========================
+# Operating System Files
+# ==========================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================
+# VS Code
+# ==========================
+
+.vscode/
+
+# ==========================
+# IntelliJ / PyCharm / Android Studio
+# ==========================
+
+.idea/
+*.iml
+
+# ==========================
+# Eclipse
+# ==========================
+
+.project
+.classpath
+.settings/
+
+# ==========================
+# NetBeans
+# ==========================
+
+nbproject/private/
+
+# ==========================
+# Python
+# ==========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# ==========================
+# Java
+# ==========================
+
+*.class
+*.jar
+*.war
+*.ear
+target/
+out/
+build/
+
+# ==========================
+# Logs
+# ==========================
+
+*.log
+
+# ==========================
+# Temporary Files
+# ==========================
+
+*.tmp
+*.temp
+*.swp
+*~
+
+# ==========================
+# Environment Variables
+# ==========================
+
+.env
+.env.*
+
+# ==========================
+# Node.js (if contributors use tooling)
+# ==========================
+
+node_modules/
