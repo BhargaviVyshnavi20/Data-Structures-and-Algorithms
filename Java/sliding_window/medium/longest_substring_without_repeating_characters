@@ -1,0 +1,48 @@
+import java.util.HashSet;
+
+/*
+Problem Link:
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+Approach: Sliding Window + HashSet
+
+Use a sliding window to maintain a substring with unique characters.
+A HashSet stores the characters currently inside the window.
+
+Traverse the string using two pointers:
+- Expand the window by moving the right pointer.
+- If a duplicate character is found, shrink the window from the left
+  until the duplicate is removed.
+- Add the current character to the set and update the maximum
+  window length.
+
+- Time: O(n)
+- Space: O(min(n, charset))
+*/
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+
+        HashSet<Character> set = new HashSet<>();
+
+        int max_sub_str = 0;
+        int left = 0;
+
+        for (int right = 0; right < s.length(); right++) {
+
+            // Shrink the window until the duplicate is removed
+            while (set.contains(s.charAt(right))) {
+                set.remove(s.charAt(left));
+                left++;
+            }
+
+            // Add the current character to the window
+            set.add(s.charAt(right));
+
+            // Update the maximum window length
+            max_sub_str = Math.max(max_sub_str, right - left + 1);
+        }
+
+        return max_sub_str;
+    }
+}
