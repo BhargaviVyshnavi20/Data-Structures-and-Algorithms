@@ -55,7 +55,7 @@ Explanation:
 The next permutation after [1,1,5] is [1,5,1].
 */
 
-public class Next_Permutation {
+public class next_permutation {
 
     // ==========================================================
     // Approach: Find Pivot + Swap + Reverse
